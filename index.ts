@@ -65,6 +65,23 @@ let x : string | number;
 x = 99;
 x = "hundred";      // here we can store value of type string or number as both are assigned with this variable 
 
+
+/** interface */
+// we can set a format of assigning dataTypes to an object keys and then use that variable as dataType of any other object which required to be assigned with those dataType as the declared one 
+
+interface studentType {
+    name : string,
+    age: number,
+    height: number
+}
+
+const student : studentType = {
+    name : "ritikesh",
+    age: 25,
+    height: 5.5 ,
+}
+
+
 /** type narrowing */
 //on the basis of type of data we are getting, we reduce number of lines of code execution is called type narrowing
 // we can also declare a variable by assigning it with multiple dataTypes and then use that variable as dataType of any other variable which required to be assigned with those dataType as the declared one 
@@ -84,3 +101,4 @@ function printMarks(marks : marksType){
 
 printMarks(100);
 printMarks("fifty")
+
